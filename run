@@ -1,0 +1,2 @@
+docker build -t nginx-build .
+docker run --rm --name nginx-cont  -p 80:80 nginx-build

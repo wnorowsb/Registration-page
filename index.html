@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+
+<head REGISTER form>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./site/style.css" />
+</head>
+
+<body>
+    <form action="http://pi.iem.pw.edu.pl:5000/register" method="POST" id="register" name="register" enctype="multipart/form-data">
+        <ul id=l ist>
+            <li><label for="login" id="login-label">Login</label></li>
+            <input type="text" name="login" id="login">
+            <li><label for="firstname" id="firstname-label">Firstname</label></li>
+            <input type="text" name="firstname" id="firstname">
+            <li><label for="lastname" id="lastname-label">Lastname</label></li>
+            <input type="text" name="lastname" id="lastname">
+            <li><label for="birthdate" id="birthdate-label">Date of birth</label></li>
+            <input type="text" name="birthdate" id="birthdate">
+            <li><label for="pesel" id="pesel-label">PESEL</label></li>
+            <input type="text" name="pesel" id="pesel">
+            <li><label for="sex" id="sex-label">Sex</label></li>
+            <input type="radio" name="sex" id="sex" value="M" checked='checked'>Male <input type="radio" name="sex" id="sex" value="F"> Female
+            <li><label for="photo" id="photo-label">Photo</label></li>
+            <input type="file" name="photo" id="photo">
+            <li><label for="password" id="password-label">Password</label></li>
+            <input type="password" name="password" id="password">
+            <li><label for="password-confirm" id="password-conf-label">Repeat password</label></li>
+            <input type="password" name="password-confirm" id="password-confirm">
+            <input type="submit" id="submit"></li>
+        </ul>
+    </form>
+    <script src="./site/register-validate.js"></script>
+</body>
+
+</html>
